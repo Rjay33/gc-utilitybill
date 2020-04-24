@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Assignment Three - Canvas & SVG</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abel&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <!-- STEP ONE -- LIGHTBULB ICON CREATION 
+
+  Using a Vector Graphics Drawing program such as Illustrator, create the lighbulb icon as a vector graphic for your website. When saving your image, choose the SVG format. 
+
+  If you don't have access to Illustrator : 
+
+  https://www.techradar.com/news/the-best-free-adobe-illustrator-alternatives
+
+  https://www.adobe.com/products/illustrator.html
+
+  -->
+    </header>
+    <main>
+    <section class="wrapper">
+    <section class="first">
+      <!--- STEP TWO - adding missing icon here - you can either generate it using Illustrator or programmatically -- your choice!-->
+      <h1 class="first">Understanding <br>Your Electricity Bill</h1>
+					<img class="electriclogo" src="img/electriclogo.png" height="100" width="50" alt="electriclogo">
+       
+          <img class="orangestrokes" src="img/orangestrokes.png" height="75" width="40" alt="orangestrokes">
+      <h2 id="be">Be an Informed Energy Consumer.</h2>
+      <h2 id="we">We Can Help.</h2>
+
+      <p id="for">For information on a range of topics visit:</p>
+      <ul>
+        <li class="oeblink">
+          <a href="OntarioEnergyBoard.ca/Consumers"
+            ><strong>OntarioEnergyBoard.ca/Consumers</strong></a>
+        </li>
+      <br>
+        <li class="contact1">
+          Contact <strong>Consumer Relations</strong>
+          <p class="open"><small>(open Monday to Friday, 8:30 a.m. to 5 p.m.)</small></p>
+          <a href="tel:18776322727"><strong>1-877-632-2727 </strong><small>(toll-free within Ontario)</small></a>
+        </li>
+        <li class="contact2">
+            <a href="tel:416-314-2455"><strong>416-314-2455</strong> <small>(within Greater Toronto Area or from outside Canada)</small></a>
+        </li>
+        <li class="contact3">
+          <a href="mailto:ConsumerRelations@OntarioEnergyBoard.ca"
+            ><strong>ConsumerRelations@OntarioEnergyBoard.ca</strong></a>
+        </li>
+        <br>
+        <li class="contact4"><img class="twitter" src="img/twitter.png" height="25" width="25" alt="twitter icon"><strong>@OntEnergyBoard</strong></li>
+      </ul>
+      <p><small>
+        The Ontario Energy Board is an independent and impartial public
+        regulatory agency. We make decisions that serve the public interest. Our
+        goal is to promote a viable, sustainable and efficient energy sector
+        that provides you with reliable energy services that are cost effective.</p>
+        <p><em>Ce document est aussi disponible en français.</em> Visit our website or
+        contact Consumer Relations.
+        </small></p>
+    </section>
+      <section class="second">
+        <!-- STEP THREE -- we need that icon here too! -->
+            <img class="orangestrokes1" src="img/orangestrokes1.png" height="75" width="40" alt="orangestrokes1">
+        <h2 id="time">Time-of-Use Electricity Prices</h2>
+        <p>
+          Households and small businesses in Ontario pay time-of-use prices for
+          electricity that change according to the <span><strong id="first">Time of Day</strong></span> and
+          <span><strong id="second">Day of the Week</strong></span>.The peak periods also change by
+          <span><strong id="third">season</strong></span>.<br></p>
+          <p>Your smart meter tells your utility exactly how
+          much power you use and when you use it. With this information, your
+          utility charges you for the amount of power you use at off-peak,
+          mid-peak and on-peak times.
+        </p>
+        <h3>Reasons for Different Prices</h3>
+        <p>
+          <span><strong id="fourth">When Demand is Low</strong></span>
+          and fewer people are using power, lower-cost electricity is available
+          from sources like nuclear and large hydroelectric systems.
+        </p>
+        <p>
+          <span><strong id="fifth">When demand is rises</strong></span>
+          during the day, the province’s supply of lower-cost electricity is
+          used up, and more expensive sources need to be used.
+        </p>
+      </section>
+    
+      <section class="third">
+        <!-- this section should show the circle graphs explaining peak hours -->
+        <!-- STEP FOUR create this section using SVGs - the first two can be vectors, but create the last circle graph programmatically - a few hints, you can create text and curves with SVG and can also write on a curve. https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial will be a big help -->
+              <h3 id="wh">Weekends <br>& Holidays</h3>
+              <h3 id="w">Weekdays</h3>
+          <div class="d-flex">
+            <div id="clock3" class="justify-content-center">
+              <svg viewBox="0 0 110 110" width="170" height="200">
+                <style>
+                  .small {
+                    font: 9px sans-serif;
+                    fill: #ffffff;
+                  }
+  
+                  .med {
+                    font: 7px sans-serif;
+                    fill:#a9a9a9;
+                  }
+                </style>
+                <circle cx="54.5" cy="54.5" r="42" stroke="green" stroke-width="0"
+                  fill="rgb(127, 168, 50)" />
+                <text x="72" y="53" class="small">A.M.</text>
+                <text x="20" y="53" class="small">P.M.</text>
+                <text x="66" y="10" class="med">1</text>
+                <text x="77" y="15" class="med">2</text>
+                <text x="87" y="22" class="med">3</text>
+                <text x="94" y="31" class="med">4</text>
+                <text x="99" y="42" class="med">5</text>
+                <text x="101" y="55" class="med">6</text>
+                <text x="4" y="55" class="med">6</text>
+                <text x="100" y="67" class="med">7</text>
+                <text x="97" y="77" class="med">8</text>
+                <text x="91	" y="87" class="med">9</text>
+                <text x="79" y="96.5" class="med">10</text>
+                <text x="66" y="103.5" class="med">11</text>
+                <text x="36" y="104" class="med">1</text>
+                <text x="24" y="99" class="med">2</text>
+                <text x="14" y="90" class="med">3</text>
+                <text x="8" y="79" class="med">4</text>
+                <text x="5" y="67" class="med">5</text>
+                <text x="5" y="45" class="med">7</text>
+                <text x="8" y="34" class="med">8</text>
+                <text x="16" y="25" class="med">9</text>
+                <text x="23" y="16" class="med">10</text>
+                <text x="35.5" y="10" class="med">11</text>
+                <text x="38" y="0" class="med">MIDNIGHT</text>
+                <text x="45.00" y="115" class="med">NOON</text>
+              </svg>
+            </div>
+          </div>
+              <div>
+              </div>
+              <div class="d-flex">
+                <div id="clock2" class="justify-content-center">
+                  <svg viewBox="0 0 110 110" width="170" height="200">
+                    <style>
+                      .small {
+                        font: 9px sans-serif;
+                        fill: #ffffff;
+                      }
+      
+                      .med {
+                        font: 7px sans-serif;
+                        fill:#a9a9a9;
+                      }
+                    </style>
+                    <circle cx="54.5" cy="54.5" r="42" stroke="green" stroke-width="0"
+                      fill="rgb(127, 168, 50)" />
+                    <text x="72" y="53" class="small">A.M.</text>
+                    <text x="20" y="53" class="small">P.M.</text>
+                    <text x="66" y="10" class="med">1</text>
+                    <text x="77" y="15" class="med">2</text>
+                    <text x="87" y="22" class="med">3</text>
+                    <text x="94" y="31" class="med">4</text>
+                    <text x="99" y="42" class="med">5</text>
+                    <text x="101" y="55" class="med">6</text>
+                    <text x="4" y="55" class="med">6</text>
+                    <text x="100" y="67" class="med">7</text>
+                    <text x="97" y="77" class="med">8</text>
+                    <text x="91	" y="87" class="med">9</text>
+                    <text x="79" y="96.5" class="med">10</text>
+                    <text x="66" y="103.5" class="med">11</text>
+                    <text x="36" y="104" class="med">1</text>
+                    <text x="24" y="99" class="med">2</text>
+                    <text x="14" y="90" class="med">3</text>
+                    <text x="8" y="79" class="med">4</text>
+                    <text x="5" y="67" class="med">5</text>
+                    <text x="5" y="45" class="med">7</text>
+                    <text x="8" y="34" class="med">8</text>
+                    <text x="16" y="25" class="med">9</text>
+                    <text x="23" y="16" class="med">10</text>
+                    <text x="35.5" y="10" class="med">11</text>
+                    <text x="38" y="0" class="med">MIDNIGHT</text>
+                    <text x="45.00" y="115" class="med">NOON</text>
+                  </svg>
+                </div>
+              </div>
+              <div id="clock1" class="row justify-content-center">
+                  <div class="d-flex">
+                    <div id="clock1" class="justify-content-center">
+                      <svg viewBox="0 0 110 110" width="170" height="200">
+                        <style>
+                          .small {
+                            font: 9px sans-serif;
+                            fill: #ffffff;
+                          }
+          
+                          .med {
+                            font: 7px sans-serif;
+                            fill:#a9a9a9;
+                          }
+                        </style>
+                        <circle cx="54.5" cy="54.5" r="42" stroke="green" stroke-width="0"
+                          fill="rgb(127, 168, 50)" />
+                        <text x="72" y="53" class="small">A.M.</text>
+                        <text x="20" y="53" class="small">P.M.</text>
+                        <text x="66" y="10" class="med">1</text>
+                        <text x="77" y="15" class="med">2</text>
+                        <text x="87" y="22" class="med">3</text>
+                        <text x="94" y="31" class="med">4</text>
+                        <text x="99" y="42" class="med">5</text>
+                        <text x="101" y="55" class="med">6</text>
+                        <text x="4" y="55" class="med">6</text>
+                        <text x="100" y="67" class="med">7</text>
+                        <text x="97" y="77" class="med">8</text>
+                        <text x="91	" y="87" class="med">9</text>
+                        <text x="79" y="96.5" class="med">10</text>
+                        <text x="66" y="103.5" class="med">11</text>
+                        <text x="36" y="104" class="med">1</text>
+                        <text x="24" y="99" class="med">2</text>
+                        <text x="14" y="90" class="med">3</text>
+                        <text x="8" y="79" class="med">4</text>
+                        <text x="5" y="67" class="med">5</text>
+                        <text x="5" y="45" class="med">7</text>
+                        <text x="8" y="34" class="med">8</text>
+                        <text x="16" y="25" class="med">9</text>
+                        <text x="23" y="16" class="med">10</text>
+                        <text x="35.5" y="10" class="med">11</text>
+                        <text x="38" y="0" class="med">MIDNIGHT</text>
+                        <text x="45.00" y="115" class="med">NOON</text>
+                      </svg>
+                      <img class="sun" src="img/sun.png" height="30" width="30" alt="sun">
+                      <p class="summer">SUMMER<br>May 1 - Oct 31</p> 
+                      <img class="winter" src="img/winter.png" height="40" width="40" alt="winter">
+                      <p class="winter">WINTER <br>Nov 1 - Apr 30</p>
+                    </div>
+                  </div>
+                </div>
+                </section>
+        <!-- let's put that icon here too -->
+        <!-- <h2>Your Electricity Use</h2> -->
+        <!-- STEP FIVE - using <canvas>, create a line graph showing electricity consumption over a weekly period-->
+            <section class="fourth">
+            <script>
+                window.onload = function () {
+                
+                var chart = new CanvasJS.Chart("chartContainer", {
+                  animationEnabled: true,
+                  theme: "light2",
+                  title:{
+                    text: "Monthly Electric Use"
+                  },
+                  axisY:{
+                    includeZero: false
+                  },
+                  data: [{        
+                    type: "line",       
+                    dataPoints: [
+                      { y: 450 },
+                      { y: 414},
+                      { y: 520, indexLabel: "highest",markerColor: "red", markerType: "triangle" },
+                      { y: 460 },
+                      { y: 450 },
+                      { y: 500 },
+                      { y: 480 },
+                      { y: 480 },
+                      { y: 410 , indexLabel: "lowest",markerColor: "DarkSlateGrey", markerType: "cross" },
+                      { y: 500 },
+                      { y: 480 },
+                      { y: 510 }
+                    ]
+                  }]
+                });
+                chart.render();
+                
+                }
+                </script>
+                <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+                <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+      </section>
+    </section>
+  </main>
+    <footer>
+      &copy; 2019 - COMP2081 Assignment Three - Rawdon Edghill - 200403567
+    </footer>
+  </body>
+</html>
